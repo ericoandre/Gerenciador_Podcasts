@@ -1,0 +1,29 @@
+{
+  "name": "gerenciador_podcasts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src",
+    "start:dev": "tsx --env-file=.env src/server.ts",
+    "start:watch": "tsx watch --env-file=.env  src/server.ts",
+    "start:dist": "npm run dist && node dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericoandre/Gerenciador_Podcasts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericoandre/Gerenciador_Podcasts/issues"
+  },
+  "homepage": "https://github.com/ericoandre/Gerenciador_Podcasts#readme",
+  "devDependencies": {
+    "@types/node": "^24.1.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
